@@ -2,7 +2,8 @@
 
     <string name="app_name">ShimanoTestApp</string>
     <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
+    <string name="menu_write_json">Write Json</string>
+    <string name="menu_read_json">Read Json</string>
     <string name="title_activity_main">MainActivity</string>
 
 </resources>

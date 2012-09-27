@@ -2,28 +2,25 @@ package jp.co.taosoftware.shimanotestapp;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.Iterator;
 
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.core.JsonGenerator;
-
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.app.Activity;
-import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.support.v4.app.NavUtils;
+
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonGenerator;
 
 
 public class MainActivity extends Activity {
 	
 	Handler mHandler = new Handler();
 	TextView mTextView;
-	String[][] mData = {{"山田", "太郎"}, {"鈴木", "花子"},{"島野", "英司"}};
+	String[][] mData = {{"山田", "太郎"}, {"鈴木", "花子"},{"島野", "英司"},{"宮城", "善雪"}};
 	private static final String FILE_NAME = "sample.json";
 
     @Override

@@ -9,17 +9,17 @@ import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
-
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.app.Activity;
-import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.support.v4.app.NavUtils;
+
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonGenerator;
 
 
 public class MainActivity extends Activity {
@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 	Handler mHandler = new Handler();
 	TextView mTextView;
 	String[][] mData = {
-			{"山田", "太郎01"}, {"鈴木", "花子02"},{"田中", "次郎03"},{"佐々木", "さち子04"},{"島野", "英司05"},
+			{"山田", "太郎01"}, {"鈴木", "花子02"},{"田中", "次郎03"},{"佐々木", "さち子04"},{"宮城", "善雪05"},
 			{"山田", "太郎06"}, {"鈴木", "花子07"},{"田中", "次郎08"},{"佐々木", "さち子09"},{"島野", "英司10"},
 			{"山田", "太郎11"}, {"鈴木", "花子12"},{"田中", "次郎13"},{"佐々木", "さち子14"},{"島野", "英司15"},
 			{"山田", "太郎16"}, {"鈴木", "花子17"},{"田中", "次郎18"},{"佐々木", "さち子19"},{"島野", "英司20"},
@@ -38,6 +38,7 @@ public class MainActivity extends Activity {
 			{"山田", "太郎41"}, {"鈴木", "花子42"},{"田中", "次郎43"},{"佐々木", "さち子44"},{"島野", "英司45"},
 			{"山田", "太郎46"}, {"鈴木", "花子57"},{"田中", "次郎48"},{"佐々木", "さち子49"},{"島野", "英司50"}
 			};
+
 	private static final String FILE_NAME = "sample.json";
 
     @Override
